@@ -15,3 +15,5 @@
 -  ### Step 3: navigate to the browser <br> 
     
     Navigate to the browser and create your account
+
+- ### Please make sure that the laravel is running
