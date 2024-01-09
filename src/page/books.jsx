@@ -114,6 +114,11 @@ export function Book() {
     }
   };
 
+  const handleClick = () => {
+    // Your JavaScript function logic here
+    localStorage.removeItem('token')
+  };
+
   return (
     <>
       <nav className="navbar shadow-sm  navbar-expand-lg bg-body-tertiary">
@@ -129,9 +134,11 @@ export function Book() {
           </a>
 
           <Link
+          onClick={handleClick}
             className="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-            to="/"
+            to="/user/login"
           >
+           
             <strong> Log Out </strong>
           </Link>
         </div>
@@ -227,7 +234,7 @@ export function Book() {
       ) : (
         <> 
           
-          
+
         
          </>
       )}
